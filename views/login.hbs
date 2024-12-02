@@ -1,0 +1,17 @@
+<link rel="stylesheet" href="style.css">
+<h1>Login</h1>
+
+<h4 class="text-danger" >{{message}}</h4>
+
+<form action="/verify" method="post">
+  <div class="row">
+    <label for="username">UserName</label>
+    <input type="text" name="username" autocomplete="off" placeholder="username" required>
+  </div>
+  <div class="row">
+    <label for="password">Password</label>
+    <input type="password" name="password" required>
+  </div>
+   <button type="submit">Login</button>
+  
+</form>
