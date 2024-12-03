@@ -57,7 +57,7 @@ else{
 
 
 })
-
+//updated
 app.get('/home',(req,res)=>{
     if(req.session.username){
         res.render('home')
@@ -75,6 +75,7 @@ app.get('/home',(req,res)=>{
 })
 
 
+
 app.get('/logout',(req,res)=>{
     req.session.destroy();
    // res.send("logout successfully")
@@ -82,4 +83,14 @@ app.get('/logout',(req,res)=>{
 })
 
 
-app.listen(5001,()=>console.log("server running on port 5001"))
+// app.get('/notfound', (req, res) => {
+//   res.send('Oops! Page not found.');
+// });
+
+
+// app.use("*", (req, res) => {
+ 
+//     res.redirect("/notfound");
+//   });
+  
+app.listen(5000,()=>console.log("server running on port 5000"))
