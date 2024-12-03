@@ -81,7 +81,7 @@ app.get('/logout',(req,res)=>{
    // res.send("logout successfully")
    res.render('login',{message:'logout'})
 })
-
+//
 
 // app.get('/notfound', (req, res) => {
 //   res.send('Oops! Page not found.');
